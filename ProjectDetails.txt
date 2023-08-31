@@ -1,0 +1,13 @@
+Features
+ -SignIn/SignUp
+ Browse(with authentication)
+  -Header
+  -Movie
+   -title
+   -description
+   -movie container
+     -movieSuggestion * N
+ -chatGPt
+    -search
+
+If we have a big form then we should use formik for the validation.
