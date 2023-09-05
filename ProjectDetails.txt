@@ -11,3 +11,17 @@ Features
     -search
 
 If we have a big form then we should use formik for the validation.
+
+Done.
+-Header
+-Routing of App.
+-Login Form.
+-Sign Up Form.
+
+
+Need to be done 
+//Form validation.
+//UseRef.
+//preventDefault
+//authentication
+//firebase setup.
