@@ -27,6 +27,7 @@ const Login = () => {
                     const errorCode = error.code;
                     const errorMessage = error.message;
                     console.log(errorCode + errorMessage)
+                    setErrorMssg(errorMessage)
                 });
         } else {
             signInWithEmailAndPassword(auth, email.current.value, password.current.value)
@@ -39,6 +40,7 @@ const Login = () => {
                     const errorCode = error.code;
                     const errorMessage = error.message;
                     console.log(errorCode + errorMessage)
+                    setErrorMssg(errorMessage)
                 });
         }
 
