@@ -33,3 +33,17 @@ Need to be done
 //Update Profile API.
 
 //fix the bug of authentication issue.
+//unsubscribe authstatechange
+/create constant file for constant things. (api options also)
+//get the movie data from tmdb api, go and sign in and get the api key, api read access token.
+//create movie slice.
+//create custom hook for fetch data.
+//use redux for storing video trailer data in the movie slice.
+Note:-  Everything happen two times because of strict mode to check inconsistency of react.
+
+MainContainer.
+  -videoBackground.
+  -videoTitle.
+secondaryContainer
+  -moviesList * n;
+    -cards * n;
