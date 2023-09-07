@@ -18,6 +18,8 @@ Done.
 -Login Form.
 -Sign Up Form.
 -authentication using firebase
+-Sign out 
+-update profile api.
 
 Need to be done 
 //Form validation.
@@ -28,4 +30,6 @@ Need to be done
 
 //create redux to store user.
 //Sign out.
-Update Profile API.
+//Update Profile API.
+
+//fix the bug of authentication issue.
