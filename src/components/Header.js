@@ -25,7 +25,7 @@ const Header = () => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { displayName, email, uid, photoURL } = user;
-        console.log(user)
+        // console.log(user)
         dispatch(addUser({ uid: uid, email: email, displayName: displayName , photoURL: photoURL})) 
         navigate('/browse')
       } else {
@@ -37,10 +37,12 @@ const Header = () => {
       unsubscribe();
    }
   }, [dispatch, navigate])
-
+  
   return (
 
-    <div className='w-screen absolute bg-gradient-to-b from-black z-10 flex justify-between items-center'>
+    <div className={user ? 'w-screen  absolute bg-gradient-to-b from-black z-10 flex justify-between items-center' :
+      'w-screen absolute bg-gradient-to-b from-black z-10 flex justify-between items-center'}
+      >
       <div>
         <img
           className='w-40'
