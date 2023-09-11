@@ -12,7 +12,7 @@ export const useMovieTrailer = (movieId) => {
             const json = await response.json()
             const trailerVideo = json.results.filter(trailer => trailer.type === "Trailer")
             const trailer = trailerVideo.length ? trailerVideo[0] : json.results[0];
-            console.log(trailer)
+            //console.log(trailer)
             dispatch(addMovieTrailer(trailer))
         }
         getMoviesVideos();
