@@ -1,6 +1,6 @@
 import React from 'react'
 import MovieCard from './MovieCard'
-import { useSelector } from 'react-redux'
+
 
 const MoviesList = ({ title, movies }) => {
     //const movies = useSelector(store => store.movies.nowPlayingMovies)
