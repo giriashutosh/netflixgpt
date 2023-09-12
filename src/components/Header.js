@@ -49,7 +49,7 @@ const Header = () => {
         <img
           className='w-40'
           src={LOGO_URL}
-          alt=''
+          alt='logo'
         />
       </div>
       {user && <div className='flex items-center gap-4'>
