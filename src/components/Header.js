@@ -33,6 +33,8 @@ const Header = () => {
         navigate("/")
       }
     });
+    console.log(typeof unsubscribe);
+
     return () => {
       unsubscribe();
    }
