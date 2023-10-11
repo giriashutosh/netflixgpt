@@ -53,3 +53,8 @@ Need to be done
  add gpt button in the header.
  add GptSearch.js
  add new slices for gpt search
+ GptSearch will contain search bar or movie suggestions
+ implement language translater
+ create lan constant
+ store languae record in redux
+ create supported language array in the constant file.
