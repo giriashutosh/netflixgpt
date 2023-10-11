@@ -47,3 +47,9 @@ MainContainer.
 secondaryContainer
   -moviesList * n;
     -cards * n;
+
+Need to be done
+ 1.create GPT search features.
+ add gpt button in the header.
+ add GptSearch.js
+ add new slices for gpt search
