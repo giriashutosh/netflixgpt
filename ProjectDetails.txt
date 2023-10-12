@@ -58,3 +58,9 @@ Need to be done
  create lan constant
  store languae record in redux
  create supported language array in the constant file.
+ create configSlice 
+ language options only shown when GptSearch is true.
+ GptSearch should also change to home page
+ go to platform.openAi.com login there and get secret key add into the constant file.
+ add npm openAi
+ create openai.js in the utils folder
