@@ -52,15 +52,23 @@ Need to be done
  1.create GPT search features.
  add gpt button in the header.
  add GptSearch.js
- add new slices for gpt search
- GptSearch will contain search bar or movie suggestions
- implement language translater
+ add new slices for gpt search(gptSlice: showGptSearchslice, addGptMovieResults({moviesName:"", movies: ""}))
+ GptSearch will contain search bar or GptSearchSuggestions
+ implement language translator
  create lan constant
- store languae record in redux
+ store language record in redux
  create supported language array in the constant file.
  create configSlice 
  language options only shown when GptSearch is true.
  GptSearch should also change to home page
  go to platform.openAi.com login there and get secret key add into the constant file.
  add npm openAi
- create openai.js in the utils folder
+ create openai.js in the utils folder.
+ create handleClickSearch function use openai to get suggestions and then create another helper function to get movies data on the basis
+ of queries present in the suggestion array.
+ create .env file for all the secret keys like REACT_APP_OPENAI_KEY
+ for access use process.env.REACT_APP_OPENAI_KEY
+ put the .env file in the gitignore and push all the env variable while deployment
+ use concept of memoization to reduce api call for movies data because everytime we switch between the pages the api will call again and again
+ but we have already the data in our store.
+ 
