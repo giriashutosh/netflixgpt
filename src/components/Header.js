@@ -12,7 +12,8 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector(store => store.user)
-
+  const gptSearch = useSelector(store => store.gptsearch.showGPTSuggestions)
+  
   const signOutHandler = () => {
     signOut(auth).then(() => {
       navigate("/")
@@ -58,7 +59,7 @@ const Header = () => {
         />
       </div>
       {user && <div className='flex items-center gap-4'>
-        <button className='bg-purple-400 p-2 rounded-lg' onClick={gptClickHandler}>GPTSearch</button>
+        <button className='bg-purple-400 p-2 rounded-lg' onClick={gptClickHandler}>{gptSearch ? "HOME": "GPTSearch"}</button>
         <p className='text-red-600 font-bold text-lg'>Welcome, {user.displayName}</p>
         <img src={ AVATAR_URL} className = "w-10" alt=''/>
         <button className='text-red-600 font-bold text-lg mr-6' onClick={signOutHandler}>Sign Out</button>
