@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { onAuthStateChanged } from 'firebase/auth';
 import { addUser, removeUser } from '../store/UserSlice';
 import { AVATAR_URL, LOGO_URL } from '../utils/constant';
+import { showGptSearch } from '../store/GptSearchSlice';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -19,6 +20,10 @@ const Header = () => {
     }).catch((error) => {
       console.log(error)
     });
+  }
+
+  const gptClickHandler = () => {
+    dispatch(showGptSearch())
   }
 
   useEffect(() => {
@@ -53,6 +58,7 @@ const Header = () => {
         />
       </div>
       {user && <div className='flex items-center gap-4'>
+        <button className='bg-purple-400 p-2 rounded-lg' onClick={gptClickHandler}>GPTSearch</button>
         <p className='text-red-600 font-bold text-lg'>Welcome, {user.displayName}</p>
         <img src={ AVATAR_URL} className = "w-10" alt=''/>
         <button className='text-red-600 font-bold text-lg mr-6' onClick={signOutHandler}>Sign Out</button>
